@@ -1711,3 +1711,226 @@ footer a {
     }
 
 }
+
+/* === HERO VISUAL POLISH + RTL SPACING FIX === */
+
+/* نخلي الرسمة اليسار أبسط وأقرب للشكل اللي عجبك */
+.build-index {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.build-index-header,
+.build-index-footer {
+    display: none !important;
+}
+
+.build-index-main {
+    height: 500px !important;
+    background: transparent !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.build-index-main::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: 1px;
+    border: 0 !important;
+    border-radius: 50%;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        0 0 0 74px rgba(30,49,82,.12),
+        0 0 0 132px rgba(30,49,82,.10);
+}
+
+.build-index-main::after {
+    content: "";
+    position: absolute;
+    right: 95px;
+    bottom: 68px;
+    width: 28px;
+    height: 28px;
+    border-right: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    opacity: .9;
+}
+
+.build-core {
+    width: 92px !important;
+    height: 92px !important;
+    z-index: 3 !important;
+}
+
+.build-core strong {
+    font-size: 22px !important;
+}
+
+.build-core span {
+    font-size: 7px !important;
+    letter-spacing: .08em !important;
+}
+
+.build-coordinate {
+    background: transparent !important;
+    border: 1px solid rgba(24,26,31,.12) !important;
+    color: var(--blue) !important;
+    min-width: 44px !important;
+    padding: 8px 10px !important;
+    font-size: 8px !important;
+}
+
+.coordinate-a {
+    left: 4% !important;
+    top: 28% !important;
+}
+
+.coordinate-b {
+    right: 8% !important;
+    top: 38% !important;
+}
+
+.coordinate-c {
+    right: 10% !important;
+    bottom: 10% !important;
+}
+
+.coordinate-d {
+    left: 6% !important;
+    bottom: 22% !important;
+}
+
+.coordinate-e {
+    display: none !important;
+}
+
+.build-lines {
+    display: none !important;
+}
+
+/* تحسين توزيع الهيرو */
+.hero-grid {
+    align-items: center !important;
+}
+
+.hero-main {
+    align-self: center !important;
+}
+
+/* تصليح العربي حتى الهمزات والنقاط ما تتراكب */
+html[dir="rtl"] .hero-title {
+    font-size: clamp(4.2rem, 7.2vw, 8.3rem) !important;
+    line-height: 1.03 !important;
+    letter-spacing: 0 !important;
+    max-width: 760px !important;
+}
+
+html[dir="rtl"] .hero-title span {
+    display: block !important;
+    margin-bottom: .08em !important;
+}
+
+html[dir="rtl"] .hero-title span:last-child {
+    margin-bottom: 0 !important;
+}
+
+html[dir="rtl"] .outline-text {
+    -webkit-text-stroke: 1.2px var(--blue) !important;
+    text-stroke: 1.2px var(--blue) !important;
+    padding-top: .02em !important;
+    padding-bottom: .02em !important;
+}
+
+html[dir="rtl"] .hero-bottom p {
+    max-width: 640px !important;
+    line-height: 1.95 !important;
+}
+
+html[dir="rtl"] .desktop-nav a,
+html[dir="rtl"] .nav-actions,
+html[dir="rtl"] .availability {
+    letter-spacing: 0 !important;
+}
+
+/* موبايل */
+@media (max-width: 760px) {
+    .build-index-main {
+        height: 360px !important;
+    }
+
+    .build-index-main::before {
+        width: 110px !important;
+        height: 110px !important;
+        box-shadow:
+            0 0 0 38px rgba(30,49,82,.12),
+            0 0 0 76px rgba(30,49,82,.10) !important;
+    }
+
+    .build-index-main::after {
+        right: 28px !important;
+        bottom: 32px !important;
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .build-core {
+        width: 72px !important;
+        height: 72px !important;
+    }
+
+    html[dir="rtl"] .hero-title {
+        font-size: clamp(3.5rem, 14vw, 5.6rem) !important;
+        line-height: 1.08 !important;
+        max-width: 100% !important;
+    }
+
+    html[dir="rtl"] .hero-title span {
+        margin-bottom: .1em !important;
+    }
+}
+
+/* === FINAL BUILD INDEX FIX === */
+
+/* Restore the three clean visual levels */
+.build-index-main::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 160px;
+    height: 160px;
+
+    border: 1px solid rgba(30,49,82,.18);
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow:
+        0 0 0 55px rgba(30,49,82,.12),
+        0 0 0 110px rgba(30,49,82,.10);
+
+    pointer-events: none;
+}
+
+/* Remove the unwanted small side circle completely */
+.build-index-main::after {
+    content: none;
+    display: none;
+    border: 0;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Keep the main square above the rings */
+.build-core {
+    z-index: 5;
+}

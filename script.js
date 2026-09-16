@@ -48,6 +48,9 @@
             newsDescription:
                 'An automation pipeline for discovering, filtering, prioritizing, verifying, preparing, quality-checking, and publishing important AI and technology updates.',
 
+            englishBotDescription:
+                'A bilingual English-learning automation system that generates vocabulary, phrases, grammar corrections, quizzes, and conversation-based content with quality gates, novelty checks, Telegram publishing, and SQLite history.',
+
             aboutEyebrow:
                 'How I work',
 
@@ -129,6 +132,9 @@
 
             newsDescription:
                 'منظومة مؤتمتة لاكتشاف أخبار الذكاء الاصطناعي والتقنية وتصفيتها وترتيبها والتحقق منها وتجهيزها وفحصها ونشرها.',
+
+            englishBotDescription:
+                'منظومة تعليم إنكليزي ثنائية اللغة تولد مفردات وعبارات وتصحيحات لغوية واختبارات ومحتوى حوارياً مع فحوص جودة ومنع التكرار والنشر عبر تيليغرام وحفظ سجل المحتوى.',
 
             aboutEyebrow:
                 'طريقة عملي',
