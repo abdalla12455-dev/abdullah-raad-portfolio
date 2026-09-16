@@ -1934,3 +1934,88 @@ html[dir="rtl"] .availability {
 .build-core {
     z-index: 5;
 }
+
+/* === ABOUT RTL TITLE SPACING FIX === */
+
+html[dir="rtl"] .about h2,
+html[dir="rtl"] #about h2,
+html[dir="rtl"] .about-title,
+html[dir="rtl"] .method-title {
+    line-height: 1.18 !important;
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+    font-size: clamp(4rem, 6.6vw, 7.4rem) !important;
+    max-width: 7.2ch !important;
+}
+
+html[dir="rtl"] .about h2 span,
+html[dir="rtl"] #about h2 span,
+html[dir="rtl"] .about-title span,
+html[dir="rtl"] .method-title span {
+    display: block !important;
+    margin-bottom: .09em !important;
+}
+
+html[dir="rtl"] .about h2 span:last-child,
+html[dir="rtl"] #about h2 span:last-child,
+html[dir="rtl"] .about-title span:last-child,
+html[dir="rtl"] .method-title span:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* إذا النص مو متقسم إلى spans، نخلي ارتفاعه مريح */
+html[dir="rtl"] .about-head,
+html[dir="rtl"] .about-main,
+html[dir="rtl"] .about-copy {
+    overflow: visible !important;
+}
+
+@media (max-width: 760px) {
+    html[dir="rtl"] .about h2,
+    html[dir="rtl"] #about h2,
+    html[dir="rtl"] .about-title,
+    html[dir="rtl"] .method-title {
+        line-height: 1.2 !important;
+        font-size: clamp(3.2rem, 12vw, 5.1rem) !important;
+        max-width: 100% !important;
+    }
+
+    html[dir="rtl"] .about h2 span,
+    html[dir="rtl"] #about h2 span,
+    html[dir="rtl"] .about-title span,
+    html[dir="rtl"] .method-title span {
+        margin-bottom: .1em !important;
+    }
+}
+
+/* === CONTACT RTL TITLE SPACING FIX === */
+
+html[dir="rtl"] .contact-title {
+    line-height: 1.12;
+    letter-spacing: 0;
+    font-size: clamp(4.6rem, 10vw, 11rem);
+}
+
+html[dir="rtl"] .contact-title span {
+    display: block;
+}
+
+html[dir="rtl"] .contact-title span + span {
+    margin-top: .10em;
+}
+
+html[dir="rtl"] .outline-contact {
+    padding-top: .04em;
+    padding-bottom: .06em;
+}
+
+@media (max-width: 760px) {
+    html[dir="rtl"] .contact-title {
+        line-height: 1.16;
+        font-size: clamp(3.6rem, 15vw, 5.8rem);
+    }
+
+    html[dir="rtl"] .contact-title span + span {
+        margin-top: .12em;
+    }
+}
