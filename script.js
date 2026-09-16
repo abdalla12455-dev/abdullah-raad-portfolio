@@ -20,8 +20,9 @@
       nav_logo_text:    'AR',
 
       hero_avail:       'Open to remote opportunities',
-      hero_tagline:     'I build <span class="highlight-primary">AI-powered systems</span> that scale —<br>not just demos.',
+      hero_tagline:     'I build <span class="highlight-primary">AI systems & automation</span> that scale —<br>not just demos.',
       hero_positioning: 'I build systems that understand language — not just process data.',
+      hero_roles:       '[ AI Systems & Automation Engineer · Full Stack Developer · English Trainer ]',
       hero_cta_projects:'View Projects',
       hero_cta_wa:      'WhatsApp Me',
       hero_cta_email:   'Email Me',
@@ -45,48 +46,48 @@
       diff3_title: 'Production Over Prototypes',
       diff3_body:  'I build for real-world conditions: high-concurrency scenarios, pessimistic locking, atomic transactions, rate limiting. Systems that survive load, not just demos that survive a pitch.',
 
-      proj_eyebrow: 'Production Systems',
+      proj_eyebrow: 'Systems & Automation',
       proj_heading: 'Featured Work',
       proj_sub:     'Real challenges. Intelligent architecture. Measurable outcomes.',
       psr_problem:  'Problem',
       psr_solution: 'Solution',
       psr_result:   'Result',
 
-      p1_title: 'Iraqi Dialect AI Chat',
-      p1_prob:  'Standard LLMs fail to comprehend Iraqi Arabic dialect — producing irrelevant, low-confidence outputs that erode user trust.',
-      p1_sol:   'Engineered a localized NLP pipeline strictly fine-tuned on Iraqi dialect syntax, idioms, and phonetic patterns.',
-      p1_res:   'Near-native dialect comprehension and culturally resonant responses — eliminating the language gap for Iraqi end users.',
+      p1_title: 'Ibn Hayan Healthcare OS',
+      p1_prob:  'Healthcare operations require strict separation between clinics, users, permissions, appointments, patient queues, and business data while still supporting centralized administration.',
+      p1_sol:   'Designed a multi-tenant healthcare architecture with Super Admin and Clinic Admin boundaries, appointment persistence, patient queue workflows, modular domains, contracts, testing layers, and observability.',
+      p1_res:   'Created an extensible foundation for isolated clinic operations, centralized administration, appointment workflows, patient queues, and continued platform growth.',
 
-      p2_title: 'Prompt Library SaaS Platform',
-      p2_prob:  'Engineering teams lack centralized, versioned storage for AI prompts — resulting in duplicated effort and inconsistent outputs.',
-      p2_sol:   'Built a multi-tenant SaaS platform with real-time workspaces, strict prompt versioning, and API integration layers.',
-      p2_res:   'Standardized AI workflows across teams — reducing prompt redundancy and measurably improving LLM output quality.',
+      p2_title: 'Nexora Trading Automation',
+      p2_prob:  'Manual market monitoring across multiple timeframes and platforms is repetitive, difficult to audit, and vulnerable to inconsistent execution.',
+      p2_sol:   'Built an automation and research workflow integrating market analysis, platform data, Telegram, rule-based risk gates, monitoring, and historical testing.',
+      p2_res:   'Turned repeated analysis and research tasks into a structured, logged, and reproducible automation workflow.',
 
-      p3_title: 'Plastic Surgery Booking System',
-      p3_prob:  'Traffic spikes during booking releases caused race conditions — double-booking doctors\' schedules under concurrent load.',
-      p3_sol:   'Rebuilt transaction layer with pessimistic DB locking, atomic queue processing, and strict rate limiting on booking endpoints.',
-      p3_res:   'Zero double-bookings post-launch. System sustained peak loads without degradation or data inconsistency.',
-
-      p4_title: 'Qiyafe Retail Platform',
-      p4_prob:  'Legacy monolithic architecture couldn\'t scale during seasonal traffic spikes — causing failures and lost conversions.',
-      p4_sol:   'Migrated to decoupled microservices architecture with a high-performance frontend and dedicated API gateway.',
-      p4_res:   'Full availability during peak traffic. Accelerated customer conversion funnel and reduced infrastructure cost.',
-
-      p5_title: 'School Data Tracker System',
-      p5_prob:  'Educational administrators operated on fragmented data — no unified view of student attrition, GPA trends, or faculty load.',
-      p5_sol:   'Deployed a centralized analytics dashboard combining fragmented data sources into real-time, interactive visual reports.',
-      p5_res:   'Enabled data-driven administrative decisions — early intervention for at-risk students and streamlined institutional reporting.',
+      p3_title: 'AI News Automation System',
+      p3_prob:  'Important AI and technology updates are scattered across many sources, creating large amounts of noise and repetitive manual monitoring.',
+      p3_sol:   'Designed an automated pipeline for discovery, filtering, classification, prioritization, and Telegram-ready publishing of relevant updates.',
+      p3_res:   'Created a repeatable workflow that moves useful technology news from discovery to publication with far less manual screening.',
 
       skills_eyebrow: 'Capabilities',
       skills_heading: 'Technical Stack',
+
       skill1_title: 'AI & NLP',
       skill1_items: ['Prompt Engineering', 'Natural Language Processing', 'LLM Workflows & Orchestration', 'Fine-tuning & Evaluation'],
-      skill2_title: 'Backend',
-      skill2_items: ['Laravel Ecosystem', 'REST APIs Architecture', 'DB Transactions & Locking', 'Rate Limiting & Security'],
-      skill3_title: 'Frontend',
-      skill3_items: ['UI/UX Design Systems', 'Responsive & Mobile-First', 'Modern JS Frameworks', 'Performance Optimization'],
-      skill4_title: 'Tools & DBs',
-      skill4_items: ['Cursor · Lovable · Replit', 'AntiGravity · Git', 'MySQL · PostgreSQL', 'Docker · CI/CD'],
+
+      skill2_title: 'Automation & Integrations',
+      skill2_items: ['Workflow Automation', 'API Integration', 'Webhooks & Event Flows', 'Python Automation'],
+
+      skill3_title: 'Backend & APIs',
+      skill3_items: ['Laravel Ecosystem', 'REST API Architecture', 'DB Transactions & Locking', 'Rate Limiting & Security'],
+
+      skill4_title: 'Frontend',
+      skill4_items: ['UI/UX Design Systems', 'Responsive & Mobile-First', 'Modern JS Frameworks', 'Performance Optimization'],
+
+      skill5_title: 'AI Agents & Bots',
+      skill5_items: ['AI Agents', 'Telegram Bots', 'LLM Orchestration', 'Monitoring & Alerts'],
+
+      skill6_title: 'Tools & Databases',
+      skill6_items: ['Cursor · Git · AI Tooling', 'MySQL · PostgreSQL', 'Docker · CI/CD', 'Vercel · Cloud Deployment'],
 
       lang_eyebrow: 'Multilingual',
       lang_heading: 'Languages',
@@ -127,14 +128,11 @@
       aria_nav_logo: 'Abdullah Raad - Home',
       aria_linkedin: 'Visit Abdullah Raad on LinkedIn',
       aria_whatsapp: 'Chat with Abdullah Raad on WhatsApp',
-      page_title: 'Abdullah Raad | Full Stack Developer & AI Systems Architect',
-      meta_description: 'Abdullah Raad — Full Stack Developer, AI Systems Architect & English Trainer based in Baghdad, Iraq. Building AI-powered production systems 60–80% faster.',
-      
-      alt_iraqi_chat: 'Iraqi Dialect AI Chat interface mockup',
-      alt_prompt_saas: 'Prompt Library SaaS dashboard mockup',
-      alt_booking_system: 'Clinic booking system dashboard mockup',
-      alt_retail_platform: 'Qiyafe retail e-commerce dashboard mockup',
-      alt_school_tracker: 'School performance analytics dashboard mockup',
+      page_title: 'Abdullah Raad | AI Systems & Automation Engineer',
+      meta_description: 'Abdullah Raad — AI Systems & Automation Engineer building intelligent automation, AI agents, API integrations, bots, and production-grade software systems.',
+      alt_prompt_saas: 'Ibn Hayan Healthcare OS interface',
+      alt_retail_platform: 'Nexora Trading Automation dashboard',
+      alt_school_tracker: 'AI News Automation System dashboard',
     },
 
     ar: {
@@ -147,8 +145,9 @@
       nav_logo_text:    'ع.ر',
 
       hero_avail:       'متاح للعمل عن بُعد',
-      hero_tagline:     'أبني <span class="highlight-primary">أنظمة مدعومة بالذكاء الاصطناعي</span> قابلة للتوسع —<br>وليست مجرد نماذج تجريبية.',
+      hero_tagline:     'أبني <span class="highlight-primary">أنظمة ذكاء اصطناعي وأتمتة</span> قابلة للتوسع —<br>وليست مجرد نماذج تجريبية.',
       hero_positioning: 'أبني أنظمة تفهم اللغة — لا تكتفي بمعالجة البيانات.',
+      hero_roles:       '[ مهندس أنظمة ذكاء اصطناعي وأتمتة · مطور شامل · مدرب لغة إنجليزية ]',
       hero_cta_projects:'استعرض المشاريع',
       hero_cta_wa:      'تواصل عبر واتساب',
       hero_cta_email:   'راسلني إلكترونياً',
@@ -172,48 +171,48 @@
       diff3_title: 'أنظمة إنتاجية لا نماذج أولية',
       diff3_body:  'أبني للواقع: قفل قاعدة البيانات التشاؤمي، المعاملات الذرية، تحديد معدل الطلبات، والتحمّل تحت الحمل القصوى. أنظمة تصمد في الإنتاج — لا مجرد عروض تُقنع العملاء.',
 
-      proj_eyebrow: 'أنظمة إنتاجية',
+      proj_eyebrow: 'الأنظمة والأتمتة',
       proj_heading: 'أبرز المشاريع',
       proj_sub:     'تحديات حقيقية. بنية ذكية. نتائج قابلة للقياس.',
       psr_problem:  'المشكلة',
       psr_solution: 'الحل',
       psr_result:   'النتيجة',
 
-      p1_title: 'شات الذكاء الاصطناعي باللهجة العراقية',
-      p1_prob:  'نماذج اللغة الكبيرة القياسية تُخفق في فهم اللهجة العراقية، فتُنتج استجابات غير ذات صلة تُضعف ثقة المستخدم.',
-      p1_sol:   'بنيت خط معالجة لغة طبيعية محلياً، مضبوطاً بدقة على بنية اللهجة العراقية وتعابيرها وأنماطها الصوتية.',
-      p1_res:   'فهم شبه أصيل للهجة العراقية، مع استجابات ذات صدى ثقافي — يُزيل الحاجز اللغوي أمام المستخدمين المحليين.',
+      p1_title: 'نظام ابن حيان الصحي',
+      p1_prob:  'تحتاج الأنظمة الصحية إلى فصل دقيق بين العيادات والمستخدمين والصلاحيات والبيانات، مع الإبقاء على إدارة مركزية للنظام.',
+      p1_sol:   'صممت بنية متعددة المستأجرين تتضمن إدارة مركزية وإدارة مستقلة للعيادات، مع تقسيم واضح للنطاقات والعقود والاختبارات والمراقبة.',
+      p1_res:   'إنشاء أساس قابل للتوسع يعزل عمليات كل عيادة ويدعم الإدارة المركزية والتطوير المستقبلي للمنصة.',
 
-      p2_title: 'منصة SaaS لمكتبة البرومبتات',
-      p2_prob:  'فرق الهندسة تفتقر إلى مكان مركزي لتخزين برومبتات الذكاء الاصطناعي وإصدارها، مما يُفضي إلى جهد مكرر ونتائج غير متسقة.',
-      p2_sol:   'بنيت منصة SaaS متعددة المستأجرين توفر مساحات عمل تشاركية، وإصدار دقيق للبرومبتات، وطبقات تكامل مع الواجهات البرمجية.',
-      p2_res:   'توحيد سير عمل الذكاء الاصطناعي عبر الفرق — مع تقليص التكرار وتحسين ملحوظ في جودة مخرجات النماذج.',
+      p2_title: 'منظومة نكسورا للأتمتة',
+      p2_prob:  'المراقبة اليدوية للأسواق عبر أطر زمنية ومنصات متعددة عملية متكررة ويصعب تدقيقها والمحافظة على اتساقها.',
+      p2_sol:   'بنيت مسار أتمتة وبحث يربط تحليل السوق وبيانات المنصات وتيليغرام وضوابط المخاطر والمراقبة والاختبارات التاريخية.',
+      p2_res:   'تحويل مهام التحليل والبحث المتكررة إلى مسار عمل منظم ومسجل وقابل لإعادة الاختبار.',
 
-      p3_title: 'نظام حجز عيادات الجراحة التجميلية',
-      p3_prob:  'الارتفاع المفاجئ في الطلبات خلال فترات الحجز يُسبّب تعارضات في قاعدة البيانات — مما يؤدي إلى حجوزات مزدوجة للأطباء.',
-      p3_sol:   'أعدت بناء طبقة المعاملات باستخدام قفل قاعدة البيانات التشاؤمي، ومعالجة الطوابير الذرية، وتحديد صارم لمعدل الطلبات على نقاط الحجز.',
-      p3_res:   'صفر حجوزات مزدوجة بعد الإطلاق. النظام يتحمل ذروة الحمل دون تراجع في الأداء أو تناقض في البيانات.',
-
-      p4_title: 'منصة قيافة للتجزئة',
-      p4_prob:  'البنية الأحادية القديمة عجزت عن التوسع خلال موجات الزيارات الموسمية — مما أفضى إلى أعطال وخسائر في التحويلات.',
-      p4_sol:   'هاجرت النظام إلى بنية خدمات مصغّرة منفصلة، مع واجهة أمامية عالية الأداء وبوابة API مخصصة.',
-      p4_res:   'توافر كامل خلال ذروة الزيارات، وتسريع لقمع التحويل، وتخفيض في تكاليف البنية التحتية.',
-
-      p5_title: 'نظام تتبع بيانات المدارس',
-      p5_prob:  'المسؤولون التعليميون يعملون على بيانات مجزأة — لا يوجد عرض موحد لمعدلات ترك الطلاب أو اتجاهات المعدلات أو أحمال أعضاء هيئة التدريس.',
-      p5_sol:   'نشرت لوحة تحليلات مركزية تجمع مصادر بيانات متفرقة في تقارير مرئية تفاعلية ولحظية.',
-      p5_res:   'قرارات إدارية مبنية على البيانات، مع تدخل مبكر للطلاب المعرّضين للخطر وتبسيط للتقارير المؤسسية.',
+      p3_title: 'نظام أتمتة أخبار الذكاء الاصطناعي',
+      p3_prob:  'أخبار الذكاء الاصطناعي والتقنية موزعة بين مصادر كثيرة، مما يولد ضوضاء كبيرة ويتطلب متابعة يدوية مستمرة.',
+      p3_sol:   'صممت مساراً آلياً لاكتشاف الأخبار وتصفيتها وتصنيفها وترتيب أهميتها وتجهيزها للنشر عبر تيليغرام.',
+      p3_res:   'إنشاء سير عمل متكرر ينقل الأخبار التقنية المهمة من مرحلة الاكتشاف إلى النشر مع تقليل المتابعة اليدوية.',
 
       skills_eyebrow: 'الكفاءات',
       skills_heading: 'المنظومة التقنية',
+
       skill1_title: 'الذكاء الاصطناعي ومعالجة اللغة',
-      skill1_items: ['هندسة البرومبتات', 'معالجة اللغة الطبيعية (NLP)', 'تنسيق سير عمل النماذج الكبيرة (LLM)', 'الضبط الدقيق والتقييم'],
-      skill2_title: 'الخلفية البرمجية',
-      skill2_items: ['منظومة Laravel', 'بنية REST APIs', 'معاملات قاعدة البيانات والقفل', 'تحديد المعدل والأمان'],
-      skill3_title: 'الواجهة الأمامية',
-      skill3_items: ['أنظمة تصميم UI/UX', 'تصميم متجاوب وأولوية للجوال', 'أطر JavaScript الحديثة', 'تحسين الأداء'],
-      skill4_title: 'الأدوات وقواعد البيانات',
-      skill4_items: ['Cursor · Lovable · Replit', 'AntiGravity · Git', 'MySQL · PostgreSQL', 'Docker · CI/CD'],
+      skill1_items: ['هندسة البرومبتات', 'معالجة اللغة الطبيعية', 'تنسيق سير عمل النماذج الكبيرة', 'الضبط الدقيق والتقييم'],
+
+      skill2_title: 'الأتمتة وتكامل الأنظمة',
+      skill2_items: ['أتمتة سير العمل', 'تكامل الواجهات البرمجية', 'الخطافات ومسارات الأحداث', 'الأتمتة باستخدام بايثون'],
+
+      skill3_title: 'الخلفية البرمجية والواجهات',
+      skill3_items: ['منظومة Laravel', 'هندسة REST API', 'معاملات قاعدة البيانات والقفل', 'تحديد المعدل والأمان'],
+
+      skill4_title: 'الواجهة الأمامية',
+      skill4_items: ['أنظمة تصميم UI/UX', 'تصميم متجاوب وأولوية للجوال', 'أطر JavaScript الحديثة', 'تحسين الأداء'],
+
+      skill5_title: 'وكلاء الذكاء الاصطناعي والبوتات',
+      skill5_items: ['وكلاء الذكاء الاصطناعي', 'بوتات تيليغرام', 'تنسيق النماذج اللغوية', 'المراقبة والتنبيهات'],
+
+      skill6_title: 'الأدوات وقواعد البيانات',
+      skill6_items: ['Cursor · Git · أدوات الذكاء الاصطناعي', 'MySQL · PostgreSQL', 'Docker · CI/CD', 'Vercel · النشر السحابي'],
 
       lang_eyebrow: 'التعدد اللغوي',
       lang_heading: 'اللغات',
@@ -254,14 +253,11 @@
       aria_nav_logo: 'عبدالله رعد - الرئيسية',
       aria_linkedin: 'زيارة حساب عبدالله رعد على LinkedIn',
       aria_whatsapp: 'تحدث مع عبدالله رعد على واتساب',
-      page_title: 'عبدالله رعد | مطور فول ستاك ومعماري أنظمة ذكاء اصطناعي',
-      meta_description: 'عبدالله رعد — مطور فول ستاك، معماري أنظمة ذكاء اصطناعي ومدرب لغة إنجليزية في بغداد، العراق. أبني أنظمة إنتاجية مدعومة بالذكاء الاصطناعي بشكل أسرع بنسبة 60-80%.',
-
-      alt_iraqi_chat: 'واجهة دردشة الذكاء الاصطناعي باللهجة العراقية',
-      alt_prompt_saas: 'لوحة تحكم منصة مكتبة البرومبتات',
-      alt_booking_system: 'لوحة تحكم نظام حجز العيادات',
-      alt_retail_platform: 'لوحة تحكم منصة قياف للتجزئة',
-      alt_school_tracker: 'لوحة تحليلات أداء المدارس',
+      page_title: 'عبدالله رعد | مهندس أنظمة ذكاء اصطناعي وأتمتة',
+      meta_description: 'عبدالله رعد — مهندس أنظمة ذكاء اصطناعي وأتمتة، أبني حلول أتمتة ذكية ووكلاء ذكاء اصطناعي وبوتات وتكاملات برمجية وأنظمة إنتاجية.',
+      alt_prompt_saas: 'واجهة نظام ابن حيان الصحي',
+      alt_retail_platform: 'لوحة منظومة نكسورا للأتمتة',
+      alt_school_tracker: 'لوحة نظام أتمتة أخبار الذكاء الاصطناعي',
     }
   };
 
@@ -330,7 +326,7 @@
     });
 
     /* Skill list items */
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 6; i++) {
       const ul = document.querySelector(`[data-skill-list="${i}"]`);
       if (ul && t[`skill${i}_items`]) {
         ul.innerHTML = t[`skill${i}_items`]

@@ -923,3 +923,39 @@ section {
     transform: none !important;
   }
 }
+
+
+/* =========================================================
+   PROJECT SOURCE LINKS
+   ========================================================= */
+
+.project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: .75rem;
+    flex-wrap: wrap;
+}
+
+.project-source-link {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: .55rem .85rem;
+    border: 1px solid var(--border-color, rgba(255,255,255,.18));
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: .78rem;
+    letter-spacing: .04em;
+    text-decoration: none;
+    color: inherit;
+    transition:
+        transform .2s ease,
+        border-color .2s ease,
+        background .2s ease;
+}
+
+.project-source-link:hover {
+    transform: translateY(-2px);
+    border-color: currentColor;
+    background: rgba(127,127,127,.08);
+}
