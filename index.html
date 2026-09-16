@@ -1,454 +1,977 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Abdullah Raad | AI Systems & Automation Engineer</title>
-    <meta name="description" content="Abdullah Raad — AI Systems & Automation Engineer building intelligent automation, AI agents, API integrations, bots, and production-grade software systems.">
-    <meta name="keywords" content="Abdullah Raad, AI Systems, Automation Engineer, AI Agents, Workflow Automation, API Integration, Bots, Python, Full Stack Developer, NLP, Baghdad Iraq">
-    <meta name="author" content="Abdullah Raad">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Abdullah Raad | AI Systems & Automation Engineer">
-    <meta property="og:description" content="I build intelligent AI systems and automation that scale — not just demos.">
-    <meta property="og:type" content="website">
+    <meta name="description"
+          content="Abdullah Raad builds AI systems, automation workflows, integrations, bots, and software products.">
 
-    <!-- Google Fonts: Editorial / Luxury Aesthetic -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name="theme-color"
+          content="#F3F0E8">
 
-    <!-- Phosphor Icons -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="styles.css">
 </head>
-<body class="editorial-theme">
-    <!-- Background geometric lines -->
-    <div class="bg-lines" aria-hidden="true"></div>
 
-    <!-- Noise Texture Overlay -->
-    <div class="noise-overlay" aria-hidden="true"></div>
+<body>
 
-    <!-- ===================== NAVBAR ===================== -->
-    <header class="navbar" role="banner">
-        <div class="nav-inner">
-            <div class="nav-left">
-                <a href="#" class="nav-logo" aria-label="Abdullah Raad - Home" data-i18n-aria="aria_nav_logo">
-                    <span data-i18n="nav_logo_text">AR</span><span class="logo-dot">.</span>
-                </a>
-            </div>
-            
-            <nav class="nav-center" role="navigation" aria-label="Main navigation">
-                <div class="nav-links">
-                    <a href="#about" data-i18n="nav_about">About</a>
-                    <a href="#projects" data-i18n="nav_work">Work</a>
-                    <a href="#skills" data-i18n="nav_skills">Skills</a>
-                    <a href="#contact" data-i18n="nav_contact">Contact</a>
-                </div>
-            </nav>
+    <!-- INVERTING CURSOR -->
 
-            <div class="nav-right">
-                <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language switcher">
-                    <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
-                    <button class="lang-btn" data-lang="ar" aria-label="Switch to Arabic">AR</button>
-                </div>
-                
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <div class="cursor-dot"
+         aria-hidden="true"></div>
 
-    <main>
-        <!-- ===================== HERO ===================== -->
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-            <div class="hero-grid">
-                <div class="hero-top reveal" style="--delay: 0.1s">
-                    <div class="hero-availability">
-                        <span class="dot dot-primary" aria-hidden="true"></span>
-                        <span data-i18n="hero_avail" class="mono-text">Open to remote opportunities</span>
-                    </div>
-                </div>
+    <div class="cursor-target"
+         aria-hidden="true">
 
-                <div class="hero-center reveal" style="--delay: 0.3s">
-                    <h1 id="hero-title" class="display-huge" data-i18n="hero_name">Abdullah Raad</h1>
-                    <h2 class="display-sub" data-i18n="hero_tagline">
-                        I build <span class="highlight-primary">AI systems & automation</span> that scale —<br>not just demos.
-                    </h2>
-                </div>
+        <span class="cursor-corner cursor-tl"></span>
+        <span class="cursor-corner cursor-tr"></span>
+        <span class="cursor-corner cursor-bl"></span>
+        <span class="cursor-corner cursor-br"></span>
 
-                <div class="hero-bottom reveal" style="--delay: 0.5s">
-                    <p class="hero-roles mono-text" data-i18n="hero_roles">
-                        [ AI Systems & Automation Engineer · Full Stack Developer · English Trainer ]
-                    </p>
-                    <div class="hero-ctas">
-                        <a href="#projects" class="ed-link mono-text">
-                            <span data-i18n="hero_cta_projects">View Projects</span>
-                            <i class="ph ph-arrow-down-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <span class="cursor-label"></span>
 
-        <!-- ===================== ABOUT ===================== -->
-        <section id="about" class="section about" aria-labelledby="about-title">
-            <div class="ed-container">
-                <div class="ed-grid">
-                    <div class="ed-col-left reveal">
-                        <p class="mono-eyebrow" data-i18n="about_eyebrow">Background</p>
-                        <h2 id="about-title" class="section-title display-large" data-i18n="about_heading">The Engineering Edge</h2>
-                    </div>
-                    <div class="ed-col-right reveal" style="--delay: 0.2s">
-                        <div class="ed-text-block">
-                            <p data-i18n="about_p1" class="lead-text">I don't write code — I architect intelligence. My discipline fuses advanced software engineering with linguistics, producing systems that don't just store and retrieve data, but understand context, intent, and human nuance.</p>
-                            <p data-i18n="about_p2">By embedding elite AI tools (Cursor, AntiGravity, LLM pipelines) directly into my development process, I consistently compress project timelines by <strong>60–80%</strong> — without cutting corners on architecture, security, or performance.</p>
-                        </div>
-                        
-                        <div class="metrics-editorial">
-                            <div class="ed-metric">
-                                <span class="ed-metric-val">60-80%</span>
-                                <span class="ed-metric-label mono-text" data-i18n="metric_delivery">Faster Delivery</span>
-                            </div>
-                            <div class="ed-metric">
-                                <span class="ed-metric-val">Zero</span>
-                                <span class="ed-metric-label mono-text" data-i18n="metric_race">Race Conditions</span>
-                            </div>
-                            <div class="ed-metric">
-                                <span class="ed-metric-val">5+</span>
-                                <span class="ed-metric-label mono-text" data-i18n="metric_systems">Production Systems</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== WHAT MAKES ME DIFFERENT ===================== -->
-        <section class="section differentials" aria-labelledby="diff-title">
-            <div class="ed-container">
-                <div class="ed-grid">
-                    <div class="ed-col-left reveal">
-                        <p class="mono-eyebrow" data-i18n="diff_eyebrow">Differentiators</p>
-                        <h2 id="diff-title" class="section-title display-large" data-i18n="diff_heading">What Makes Me Different</h2>
-                    </div>
-                    <div class="ed-col-right ed-list-view">
-                        <div class="ed-list-item reveal" style="--delay: 0.1s">
-                            <h3 class="display-medium" data-i18n="diff1_title">Language-Aware Engineering</h3>
-                            <p data-i18n="diff1_body">As an English Trainer with a linguistics background, I architect NLP systems that parse cultural context, dialect nuance, and human intent — not just tokens and embeddings.</p>
-                        </div>
-                        <div class="ed-list-item reveal" style="--delay: 0.2s">
-                            <h3 class="display-medium" data-i18n="diff2_title">AI-Accelerated Delivery</h3>
-                            <p data-i18n="diff2_body">I orchestrate advanced AI development environments — Cursor, AntiGravity, GitHub Copilot — to compress delivery timelines to a fraction of standard cycles. Same quality. Less time.</p>
-                        </div>
-                        <div class="ed-list-item reveal" style="--delay: 0.3s">
-                            <h3 class="display-medium" data-i18n="diff3_title">Production Over Prototypes</h3>
-                            <p data-i18n="diff3_body">I build for real-world conditions: high-concurrency scenarios, pessimistic locking, atomic transactions, rate limiting. Systems that survive load, not just demos that survive a pitch.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== PROJECTS (EDITORIAL LIST) ===================== -->
-        <section id="projects" class="section projects" aria-labelledby="projects-title">
-            <div class="ed-container">
-                <div class="ed-header-row reveal">
-                    <p class="mono-eyebrow" data-i18n="proj_eyebrow">Systems & Automation</p>
-                    <h2 id="projects-title" class="section-title display-large" data-i18n="proj_heading">Featured Work</h2>
-                </div>
-
-                <div class="ed-projects-wrapper">
-
-                    <!-- Project 1 -->
-                    <article class="ed-project-row reveal" style="--delay: 0.1s"
-                        data-proj-id="1" tabindex="0" role="button"
-                        aria-label="View project details">
-
-                        <div class="ed-proj-num mono-text">01 //</div>
-
-                        <div class="ed-proj-content">
-                            <h3 class="display-medium" data-i18n="p1_title">
-                                Ibn Hayan Healthcare OS
-                            </h3>
-
-                            <p class="ed-proj-desc" data-i18n="p1_res">
-                                A multi-tenant healthcare platform with centralized administration, clinic isolation, appointments, patient queues, and scalable system architecture.
-                            </p>
-
-                            <div class="ed-proj-tags mono-text">
-                                Multi-tenant SaaS · Appointments · Patient Queues · Healthcare APIs
-                            </div>
-
-                            <div class="project-links">
-                                <a
-                                    class="project-source-link"
-                                    href="https://github.com/abdalla12455-dev/ibn-hayan-healthcare-os"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    onclick="event.stopPropagation()">
-                                    GitHub ↗
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="ed-proj-img">
-                            <img src="assets/ibn-hayan-healthcare-os.png"
-                                 alt="Ibn Hayan Healthcare OS dashboard"
-                                 loading="lazy">
-                        </div>
-                    </article>
-
-
-                    <!-- Project 2 -->
-                    <article class="ed-project-row reveal" style="--delay: 0.2s"
-                        data-proj-id="2" tabindex="0" role="button"
-                        aria-label="View project details">
-
-                        <div class="ed-proj-num mono-text">02 //</div>
-
-                        <div class="ed-proj-content">
-                            <h3 class="display-medium" data-i18n="p2_title">
-                                Nexora Trading Automation
-                            </h3>
-
-                            <p class="ed-proj-desc" data-i18n="p2_res">
-                                An automated research and monitoring system connecting market analysis, risk controls, Telegram workflows, and trading-platform integrations.
-                            </p>
-
-                            <div class="ed-proj-tags mono-text">
-                                Python · cTrader API · MT5 · Telegram · Automation
-                            </div>
-
-                            <div class="project-links">
-                                <a
-                                    class="project-source-link"
-                                    href="https://github.com/abdalla12455-dev/mine/tree/main/case-studies/nexora"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    onclick="event.stopPropagation()">
-                                    Case Study ↗
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="ed-proj-img">
-                            <img src="assets/nexora-trading-automation.png"
-                                 alt="Nexora Trading Automation signal analysis"
-                                 loading="lazy">
-                        </div>
-                    </article>
-
-
-                    <!-- Project 3 -->
-                    <article class="ed-project-row reveal" style="--delay: 0.3s"
-                        data-proj-id="3" tabindex="0" role="button"
-                        aria-label="View project details">
-
-                        <div class="ed-proj-num mono-text">03 //</div>
-
-                        <div class="ed-proj-content">
-                            <h3 class="display-medium" data-i18n="p3_title">
-                                AI News Automation System
-                            </h3>
-
-                            <p class="ed-proj-desc" data-i18n="p3_res">
-                                An automated pipeline for discovering, filtering, prioritizing, and publishing important AI and technology updates.
-                            </p>
-
-                            <div class="ed-proj-tags mono-text">
-                                Automation · AI · Telegram · Content Pipeline
-                            </div>
-
-                            <div class="project-links">
-                                <a
-                                    class="project-source-link"
-                                    href="https://github.com/abdalla12455-dev/mine/tree/main/case-studies/ai-news-automation"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    onclick="event.stopPropagation()">
-                                    Case Study ↗
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="ed-proj-img">
-                            <img src="assets/ai-news-automation.png"
-                                 alt="AI News Automation real pipeline output"
-                                 loading="lazy">
-                        </div>
-                    </article>
-
-
-                    <!-- Project 4 -->
-
-
-                    <!-- Project 5 -->
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== SKILLS & LANGUAGES ===================== -->
-        <section id="skills" class="section skills-lang-combo" aria-labelledby="skills-title">
-            <div class="ed-container">
-                <div class="ed-grid">
-                    <div class="ed-col-left reveal">
-                        <p class="mono-eyebrow" data-i18n="skills_eyebrow">Capabilities</p>
-                        <h2 id="skills-title" class="section-title display-large" data-i18n="skills_heading">Technical Stack</h2>
-                    </div>
-                    
-                    <div class="ed-col-right ed-skills-grid">
-
-                        <div class="ed-skill-block reveal" style="--delay: 0.1s">
-                            <h3 class="mono-eyebrow text-primary" data-i18n="skill1_title">AI & NLP</h3>
-                            <ul class="ed-skill-list mono-text" data-skill-list="1">
-                                <li>Prompt Engineering</li>
-                                <li>Natural Language Processing</li>
-                                <li>LLM Workflows & Orchestration</li>
-                                <li>Fine-tuning & Evaluation</li>
-                            </ul>
-                        </div>
-
-                        <div class="ed-skill-block reveal" style="--delay: 0.2s">
-                            <h3 class="mono-eyebrow text-primary" data-i18n="skill2_title">Automation & Integrations</h3>
-                            <ul class="ed-skill-list mono-text" data-skill-list="2">
-                                <li>Workflow Automation</li>
-                                <li>API Integration</li>
-                                <li>Webhooks & Event Flows</li>
-                                <li>Python Automation</li>
-                            </ul>
-                        </div>
-
-                        <div class="ed-skill-block reveal" style="--delay: 0.3s">
-                            <h3 class="mono-eyebrow text-primary" data-i18n="skill3_title">Backend & APIs</h3>
-                            <ul class="ed-skill-list mono-text" data-skill-list="3">
-                                <li>Laravel Ecosystem</li>
-                                <li>REST API Architecture</li>
-                                <li>DB Transactions & Locking</li>
-                                <li>Rate Limiting & Security</li>
-                            </ul>
-                        </div>
-
-                        <div class="ed-skill-block reveal" style="--delay: 0.4s">
-                            <h3 class="mono-eyebrow text-primary" data-i18n="skill4_title">Frontend</h3>
-                            <ul class="ed-skill-list mono-text" data-skill-list="4">
-                                <li>UI/UX Design Systems</li>
-                                <li>Responsive & Mobile-First</li>
-                                <li>Modern JS Frameworks</li>
-                                <li>Performance Optimization</li>
-                            </ul>
-                        </div>
-
-                        <div class="ed-skill-block reveal" style="--delay: 0.5s">
-                            <h3 class="mono-eyebrow text-primary" data-i18n="skill5_title">AI Agents & Bots</h3>
-                            <ul class="ed-skill-list mono-text" data-skill-list="5">
-                                <li>AI Agents</li>
-                                <li>Telegram Bots</li>
-                                <li>LLM Orchestration</li>
-                                <li>Monitoring & Alerts</li>
-                            </ul>
-                        </div>
-
-                        <div class="ed-skill-block reveal" style="--delay: 0.6s">
-                            <h3 class="mono-eyebrow text-primary" data-i18n="skill6_title">Tools & Databases</h3>
-                            <ul class="ed-skill-list mono-text" data-skill-list="6">
-                                <li>Cursor · Git · AI Tooling</li>
-                                <li>MySQL · PostgreSQL</li>
-                                <li>Docker · CI/CD</li>
-                                <li>Vercel · Cloud Deployment</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="ed-grid mt-24">
-                    <div class="ed-col-left reveal">
-                        <p class="mono-eyebrow" data-i18n="lang_eyebrow">Multilingual</p>
-                        <h2 class="section-title display-large" data-i18n="lang_heading">Languages</h2>
-                    </div>
-                    <div class="ed-col-right ed-lang-list">
-                        <div class="ed-lang-item reveal" style="--delay: 0.1s">
-                            <span class="display-medium" data-i18n="lang_arabic">Arabic</span>
-                            <span class="mono-text text-primary" data-i18n="lang_arabic_level">Native · 100%</span>
-                        </div>
-                        <div class="ed-lang-item reveal" style="--delay: 0.2s">
-                            <span class="display-medium" data-i18n="lang_iraqi">Iraqi Dialect</span>
-                            <span class="mono-text text-primary" data-i18n="lang_iraqi_level">Native · 95%</span>
-                        </div>
-                        <div class="ed-lang-item reveal" style="--delay: 0.3s">
-                            <span class="display-medium" data-i18n="lang_english">English</span>
-                            <span class="mono-text text-primary" data-i18n="lang_english_level">Professional · 90%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== CONTACT ===================== -->
-        <section id="contact" class="section contact" aria-labelledby="contact-title">
-            <div class="ed-container">
-                <div class="ed-contact-block reveal">
-                    <p class="mono-eyebrow text-primary" data-i18n="contact_eyebrow">Get In Touch</p>
-                    <h2 id="contact-title" class="display-huge" data-i18n="contact_heading">Let's Build Something.</h2>
-                    
-                    <div class="ed-contact-links">
-                        <a href="mailto:abdalla12455@gmail.com" class="ed-huge-link">
-                            <span class="mono-text text-primary" data-i18n="contact_email_title"><i class="ph-bold ph-envelope-simple"></i> Send an Email</span>
-                            <span class="display-medium email-text" dir="ltr">abdalla12455@gmail.com</span>
-                        </a>
-                        
-                        <a href="https://wa.me/9647702755683" target="_blank" rel="noopener noreferrer" class="ed-huge-link">
-                            <span class="mono-text text-primary" data-i18n="contact_wa_title"><i class="ph-bold ph-whatsapp-logo wa-icon-pulse"></i> Message on WhatsApp</span>
-                            <span class="display-medium wa-text" dir="ltr">+964 770 275 5683</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="ed-footer" role="contentinfo">
-        <div class="ed-container footer-inner">
-            <div class="footer-left mono-text">
-                <span data-i18n="footer_copy">&copy; 2026 Abdullah Raad — Engineered for Scale.</span>
-            </div>
-            <div class="footer-right">
-                <a href="https://www.linkedin.com/in/abdullah-ra-b312a3404" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="ed-social-link">LN</a>
-                <a href="https://wa.me/9647702755683" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="ed-social-link">WA</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ===================== PROJECT MODAL ===================== -->
-    <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog">
-        <div class="project-modal-content">
-            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
-            <div class="modal-header">
-                <h3 id="modal-title" class="display-medium">Project Title</h3>
-                <div id="modal-tags" class="mono-text text-primary mb-4"></div>
-            </div>
-            <div class="modal-body">
-                <div class="psr-item">
-                    <span class="mono-eyebrow" data-i18n="psr_problem">Problem</span>
-                    <p id="modal-prob"></p>
-                </div>
-                <div class="psr-item">
-                    <span class="mono-eyebrow" data-i18n="psr_solution">Solution</span>
-                    <p id="modal-sol"></p>
-                </div>
-                <div class="psr-item">
-                    <span class="mono-eyebrow" data-i18n="psr_result">Result</span>
-                    <p id="modal-res"></p>
-                </div>
-            </div>
-        </div>
     </div>
 
+
+    <!-- NAVIGATION -->
+
+    <header class="topbar">
+
+        <a href="#home"
+           class="brand"
+           data-cursor="HOME">
+
+            <span>AR</span>
+            <small>26</small>
+
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="#work"
+               data-i18n="navWork"
+               data-cursor="GO">
+                Work
+            </a>
+
+            <a href="#about"
+               data-i18n="navAbout"
+               data-cursor="GO">
+                About
+            </a>
+
+            <a href="#stack"
+               data-i18n="navStack"
+               data-cursor="GO">
+                Stack
+            </a>
+
+            <a href="#contact"
+               data-i18n="navContact"
+               data-cursor="GO">
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <div class="availability">
+                <i></i>
+
+                <span data-i18n="availability">
+                    Open to remote work
+                </span>
+            </div>
+
+            <button id="langToggle"
+                    class="lang-toggle"
+                    type="button"
+                    data-cursor="SWITCH">
+
+                EN / AR
+
+            </button>
+
+            <button id="menuButton"
+                    class="menu-button"
+                    type="button">
+
+                MENU
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <nav id="mobileMenu"
+         class="mobile-menu">
+
+        <a href="#work"
+           data-i18n="navWork">
+            Work
+        </a>
+
+        <a href="#about"
+           data-i18n="navAbout">
+            About
+        </a>
+
+        <a href="#stack"
+           data-i18n="navStack">
+            Stack
+        </a>
+
+        <a href="#contact"
+           data-i18n="navContact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section id="home"
+                 class="hero">
+
+            <div class="hero-code reveal">
+                PORTFOLIO / 2026 / BAGHDAD
+            </div>
+
+
+            <div class="hero-grid">
+
+                <div class="hero-main">
+
+                    <p class="hero-name reveal">
+                        ABDULLAH RAAD
+                    </p>
+
+                    <h1 class="hero-title">
+
+                        <span class="reveal"
+                              data-i18n="heroLine1">
+                            AI systems.
+                        </span>
+
+                        <span class="outline-text reveal"
+                              data-i18n="heroLine2">
+                            Automation.
+                        </span>
+
+                        <span class="reveal"
+                              data-i18n="heroLine3">
+                            Real products.
+                        </span>
+
+                    </h1>
+
+
+                    <div class="hero-bottom reveal">
+
+                        <p data-i18n="heroDescription">
+
+                            I design software that connects
+                            AI, APIs, automation, data,
+                            and interfaces into systems
+                            that actually do useful work.
+
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#work"
+                               class="primary-button"
+                               data-cursor="VIEW">
+
+                                <span data-i18n="viewWork">
+                                    Explore work
+                                </span>
+
+                                <i class="ph ph-arrow-down-right"></i>
+
+                            </a>
+
+                            <a href="https://github.com/abdalla12455-dev"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="text-button"
+                               data-cursor="OPEN">
+
+                                GitHub
+
+                                <i class="ph ph-arrow-up-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUILD INDEX -->
+
+                <aside class="build-index reveal">
+
+                    <div class="build-index-header">
+
+                        <span>
+                            BUILD INDEX
+                        </span>
+
+                        <span>
+                            03 / 03
+                        </span>
+
+                    </div>
+
+
+                    <div class="build-index-main">
+
+                        <div class="build-coordinate coordinate-a">
+                            AI
+                        </div>
+
+                        <div class="build-coordinate coordinate-b">
+                            API
+                        </div>
+
+                        <div class="build-coordinate coordinate-c">
+                            AUTO
+                        </div>
+
+                        <div class="build-coordinate coordinate-d">
+                            DATA
+                        </div>
+
+                        <div class="build-coordinate coordinate-e">
+                            UI
+                        </div>
+
+
+                        <div class="build-core">
+
+                            <strong>AR</strong>
+
+                            <span>
+                                SYSTEMS
+                            </span>
+
+                        </div>
+
+
+                        <svg viewBox="0 0 500 500"
+                             class="build-lines"
+                             aria-hidden="true">
+
+                            <line x1="250" y1="250" x2="90" y2="90"></line>
+                            <line x1="250" y1="250" x2="410" y2="105"></line>
+                            <line x1="250" y1="250" x2="420" y2="395"></line>
+                            <line x1="250" y1="250" x2="100" y2="400"></line>
+                            <line x1="250" y1="250" x2="250" y2="58"></line>
+
+                        </svg>
+
+                    </div>
+
+
+                    <div class="build-index-footer">
+
+                        <span>
+                            REAL PROJECTS
+                        </span>
+
+                        <span>
+                            PUBLIC EVIDENCE
+                        </span>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+
+            <div class="hero-ticker">
+
+                <div class="ticker-track">
+
+                    <span>AI SYSTEMS</span>
+                    <b>•</b>
+
+                    <span>AUTOMATION</span>
+                    <b>•</b>
+
+                    <span>API INTEGRATION</span>
+                    <b>•</b>
+
+                    <span>BACKEND</span>
+                    <b>•</b>
+
+                    <span>TELEGRAM BOTS</span>
+                    <b>•</b>
+
+                    <span>LLM WORKFLOWS</span>
+                    <b>•</b>
+
+                    <span>AI SYSTEMS</span>
+                    <b>•</b>
+
+                    <span>AUTOMATION</span>
+                    <b>•</b>
+
+                    <span>API INTEGRATION</span>
+                    <b>•</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WORK -->
+
+        <section id="work"
+                 class="section work">
+
+            <div class="section-top reveal">
+
+                <div class="section-number">
+                    01
+                </div>
+
+                <div>
+
+                    <p class="eyebrow"
+                       data-i18n="workEyebrow">
+                        Selected systems
+                    </p>
+
+                    <h2 data-i18n="workTitle">
+                        Work you can inspect.
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 01 -->
+
+            <article class="project project-light reveal">
+
+                <div class="project-head">
+
+                    <span>
+                        PROJECT / 01
+                    </span>
+
+                    <span>
+                        HEALTHCARE SOFTWARE
+                    </span>
+
+                </div>
+
+
+                <div class="project-grid">
+
+                    <a class="project-image"
+                       href="https://github.com/abdalla12455-dev/ibn-hayan-healthcare-os"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-cursor="OPEN">
+
+                        <img src="assets/ibn-hayan-healthcare-os.png"
+                             alt="Ibn Hayan Healthcare OS dashboard">
+
+                        <span class="frame-corner fc-tl"></span>
+                        <span class="frame-corner fc-tr"></span>
+                        <span class="frame-corner fc-bl"></span>
+                        <span class="frame-corner fc-br"></span>
+
+                    </a>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            MULTI-TENANT PLATFORM
+                        </span>
+
+                        <h3>
+                            Ibn Hayan
+                            <small>
+                                Healthcare OS
+                            </small>
+                        </h3>
+
+                        <p data-i18n="ibnDescription">
+
+                            A healthcare platform with
+                            centralized administration,
+                            isolated clinic operations,
+                            appointments, patient queues,
+                            permissions, and modular architecture.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Multi-tenant SaaS</span>
+                            <span>Appointments</span>
+                            <span>Patient Queues</span>
+                            <span>APIs</span>
+
+                        </div>
+
+                        <a href="https://github.com/abdalla12455-dev/ibn-hayan-healthcare-os"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link"
+                           data-cursor="OPEN">
+
+                            GitHub repository
+
+                            <i class="ph ph-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 02 -->
+
+            <article class="project project-ink reveal">
+
+                <div class="project-head">
+
+                    <span>
+                        PROJECT / 02
+                    </span>
+
+                    <span>
+                        RESEARCH AUTOMATION
+                    </span>
+
+                </div>
+
+
+                <div class="project-grid project-grid-reverse">
+
+                    <a class="project-image"
+                       href="https://github.com/abdalla12455-dev/mine/tree/main/case-studies/nexora"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-cursor="VIEW">
+
+                        <img src="assets/nexora-trading-automation.png"
+                             alt="Nexora Trading Automation">
+
+                        <span class="frame-corner fc-tl"></span>
+                        <span class="frame-corner fc-tr"></span>
+                        <span class="frame-corner fc-bl"></span>
+                        <span class="frame-corner fc-br"></span>
+
+                    </a>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            MARKET RESEARCH SYSTEM
+                        </span>
+
+                        <h3>
+                            Nexora
+                            <small>
+                                Trading Automation
+                            </small>
+                        </h3>
+
+                        <p data-i18n="nexoraDescription">
+
+                            An automated research workflow
+                            connecting market analysis,
+                            risk controls, historical testing,
+                            Telegram monitoring, and trading
+                            platform integrations.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>cTrader API</span>
+                            <span>MT5</span>
+                            <span>Telegram</span>
+
+                        </div>
+
+                        <a href="https://github.com/abdalla12455-dev/mine/tree/main/case-studies/nexora"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link"
+                           data-cursor="VIEW">
+
+                            Case study
+
+                            <i class="ph ph-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 03 -->
+
+            <article class="project project-light reveal">
+
+                <div class="project-head">
+
+                    <span>
+                        PROJECT / 03
+                    </span>
+
+                    <span>
+                        AI CONTENT PIPELINE
+                    </span>
+
+                </div>
+
+
+                <div class="project-grid">
+
+                    <a class="project-image"
+                       href="https://github.com/abdalla12455-dev/mine/tree/main/case-studies/ai-news-automation"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-cursor="VIEW">
+
+                        <img src="assets/ai-news-automation.png"
+                             alt="AI News Automation pipeline">
+
+                        <span class="frame-corner fc-tl"></span>
+                        <span class="frame-corner fc-tr"></span>
+                        <span class="frame-corner fc-bl"></span>
+                        <span class="frame-corner fc-br"></span>
+
+                    </a>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            AI AUTOMATION PIPELINE
+                        </span>
+
+                        <h3>
+                            AI News
+                            <small>
+                                Automation System
+                            </small>
+                        </h3>
+
+                        <p data-i18n="newsDescription">
+
+                            An automation pipeline for
+                            discovering, filtering, prioritizing,
+                            verifying, preparing, quality-checking,
+                            and publishing important AI
+                            and technology updates.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Telegram</span>
+                            <span>Automation</span>
+
+                        </div>
+
+                        <a href="https://github.com/abdalla12455-dev/mine/tree/main/case-studies/ai-news-automation"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link"
+                           data-cursor="VIEW">
+
+                            Case study
+
+                            <i class="ph ph-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about"
+                 class="section about">
+
+            <div class="section-top reveal">
+
+                <div class="section-number">
+                    02
+                </div>
+
+                <div>
+
+                    <p class="eyebrow"
+                       data-i18n="aboutEyebrow">
+                        How I work
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <h2 class="about-title reveal"
+                    data-i18n="aboutTitle">
+
+                    The interface is only
+                    the visible part
+                    of the system.
+
+                </h2>
+
+
+                <div class="about-content reveal">
+
+                    <p data-i18n="aboutP1">
+
+                        My work sits between software engineering,
+                        automation, APIs, AI workflows,
+                        and product implementation.
+
+                    </p>
+
+                    <p data-i18n="aboutP2">
+
+                        I focus on turning repetitive
+                        or fragmented processes into structured
+                        software with explicit rules,
+                        integrations, monitoring,
+                        and usable interfaces.
+
+                    </p>
+
+
+                    <div class="proof-grid">
+
+                        <div>
+
+                            <strong>03</strong>
+
+                            <span data-i18n="proof1">
+                                documented builds
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>100%</strong>
+
+                            <span data-i18n="proof2">
+                                real project evidence
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>EN / AR</strong>
+
+                            <span data-i18n="proof3">
+                                bilingual experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STACK -->
+
+        <section id="stack"
+                 class="section stack">
+
+            <div class="section-top reveal">
+
+                <div class="section-number">
+                    03
+                </div>
+
+                <div>
+
+                    <p class="eyebrow"
+                       data-i18n="stackEyebrow">
+                        Technical stack
+                    </p>
+
+                    <h2 data-i18n="stackTitle">
+                        Systems first.
+                        Tools second.
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stack-grid">
+
+                <article data-cursor="SCAN"
+                         class="stack-item reveal">
+
+                    <span>01</span>
+
+                    <i class="ph ph-brain"></i>
+
+                    <h3>AI Systems</h3>
+
+                    <p>
+                        LLM workflows · Prompt engineering · NLP · Evaluation
+                    </p>
+
+                </article>
+
+
+                <article data-cursor="SCAN"
+                         class="stack-item reveal">
+
+                    <span>02</span>
+
+                    <i class="ph ph-flow-arrow"></i>
+
+                    <h3>Automation</h3>
+
+                    <p>
+                        Python · Telegram bots · Monitoring · Event flows
+                    </p>
+
+                </article>
+
+
+                <article data-cursor="SCAN"
+                         class="stack-item reveal">
+
+                    <span>03</span>
+
+                    <i class="ph ph-plugs-connected"></i>
+
+                    <h3>Integrations</h3>
+
+                    <p>
+                        REST APIs · Webhooks · Platform APIs · Data flows
+                    </p>
+
+                </article>
+
+
+                <article data-cursor="SCAN"
+                         class="stack-item reveal">
+
+                    <span>04</span>
+
+                    <i class="ph ph-database"></i>
+
+                    <h3>Backend</h3>
+
+                    <p>
+                        Laravel · Python · SQL · Architecture
+                    </p>
+
+                </article>
+
+
+                <article data-cursor="SCAN"
+                         class="stack-item reveal">
+
+                    <span>05</span>
+
+                    <i class="ph ph-browser"></i>
+
+                    <h3>Frontend</h3>
+
+                    <p>
+                        Responsive UI · HTML · CSS · JavaScript
+                    </p>
+
+                </article>
+
+
+                <article data-cursor="SCAN"
+                         class="stack-item reveal">
+
+                    <span>06</span>
+
+                    <i class="ph ph-git-branch"></i>
+
+                    <h3>Delivery</h3>
+
+                    <p>
+                        Git · GitHub · Testing · Vercel
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact"
+                 class="contact">
+
+            <div class="contact-meta reveal">
+
+                <span>
+                    04 / CONTACT
+                </span>
+
+                <span class="contact-status">
+
+                    <i></i>
+
+                    <span data-i18n="availability">
+                        Open to remote work
+                    </span>
+
+                </span>
+
+            </div>
+
+
+            <h2 class="contact-title reveal">
+
+                <span data-i18n="contact1">
+                    Build something
+                </span>
+
+                <span class="outline-contact"
+                      data-i18n="contact2">
+                    useful.
+                </span>
+
+            </h2>
+
+
+            <div class="contact-links reveal">
+
+
+        <a class="contact-link"
+           href="https://github.com/abdalla12455-dev" target="_blank" rel="noopener noreferrer"
+           data-cursor="OPEN">
+            <span>GitHub</span>
+            <i class="ph ph-github-logo"></i>
+        </a>
+
+        <a class="contact-link"
+           href="https://www.linkedin.com/in/abdullah-ra-b312a3404" target="_blank" rel="noopener noreferrer"
+           data-cursor="OPEN">
+            <span>LinkedIn</span>
+            <i class="ph ph-linkedin-logo"></i>
+        </a>
+
+        <a class="contact-link"
+           href="mailto:abdalla12455@gmail.com"
+           data-cursor="WRITE">
+            <span>Email</span>
+            <i class="ph ph-envelope-simple"></i>
+        </a>
+
+        <a class="contact-link"
+           href="https://wa.me/9647702755683" target="_blank" rel="noopener noreferrer"
+           data-cursor="CHAT">
+            <span>WhatsApp</span>
+            <i class="ph ph-whatsapp-logo"></i>
+        </a>
+
+
+            </div>
+
+
+            <footer>
+
+                <span>
+                    © 2026 ABDULLAH RAAD
+                </span>
+
+                <span>
+                    AI SYSTEMS / AUTOMATION
+                </span>
+
+                <a href="#home"
+                   data-cursor="TOP">
+
+                    TOP
+
+                    <i class="ph ph-arrow-up"></i>
+
+                </a>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
     <script src="script.js"></script>
+
 </body>
 </html>
