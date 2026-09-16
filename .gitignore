@@ -1,2 +1,14 @@
 .DS_Store
 Steam
+.vercel/
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.session
+*.session-journal
+__pycache__/
+*.pem
+*.key
