@@ -51,6 +51,18 @@
             englishBotDescription:
                 'A bilingual English-learning automation system that generates vocabulary, phrases, grammar corrections, quizzes, and conversation-based content with quality gates, novelty checks, Telegram publishing, and SQLite history.',
 
+            sayedTitle:
+                'Sayed Al Haleeb',
+
+            sayedSubtitle:
+                'E-Commerce',
+
+            sayedDescription:
+                'A production e-commerce platform for children\'s products with a responsive Arabic storefront, product and category management, inventory and images, cart and quantity controls, checkout, order management, delivery zones and pricing, payment methods, and a complete database-backed admin panel.',
+
+            sayedVisit:
+                'Visit live site',
+
             aboutEyebrow:
                 'How I work',
 
@@ -135,6 +147,18 @@
 
             englishBotDescription:
                 'منظومة تعليم إنكليزي ثنائية اللغة تولد مفردات وعبارات وتصحيحات لغوية واختبارات ومحتوى حوارياً مع فحوص جودة ومنع التكرار والنشر عبر تيليغرام وحفظ سجل المحتوى.',
+
+            sayedTitle:
+                'سيد الحليب',
+
+            sayedSubtitle:
+                'متجر إلكتروني',
+
+            sayedDescription:
+                'متجر إلكتروني إنتاجي متكامل لمنتجات الأطفال، يحتوي على واجهة متجر عربية متجاوبة وإدارة المنتجات والتصنيفات والمخزون والصور وسلة شراء وتحديد الكميات وإكمال الطلب وإدارة الطلبات ومناطق وأسعار التوصيل وطرق الدفع ولوحة إدارة كاملة مرتبطة بقاعدة بيانات حقيقية.',
+
+            sayedVisit:
+                'زيارة الموقع',
 
             aboutEyebrow:
                 'طريقة عملي',
