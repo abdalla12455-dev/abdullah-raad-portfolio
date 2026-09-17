@@ -1531,13 +1531,21 @@ footer a {
         min-height: 58px;
     }
 
-    .desktop-nav,
-    .lang-toggle {
+    .desktop-nav {
         display: none;
     }
 
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .lang-toggle,
     .menu-button {
         display: block;
+    }
+
+    .lang-toggle {
+        min-width: 58px;
     }
 
     .mobile-menu {
